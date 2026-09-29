@@ -1,0 +1,6 @@
+{
+  "name": "Phoenix Ledger — Private Property Hub & CRM",
+  "description": "Modern, professional real estate hub, confidential property ledger, and portfolio CRM for high-value assets and mandate tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

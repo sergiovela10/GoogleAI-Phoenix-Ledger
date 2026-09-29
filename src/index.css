@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg: #12151A;
+    --surface: #1A1E25;
+    --surface-2: #20242D;
+    --border: #2A2F39;
+    --border-soft: #22262F;
+    --ink: #EDEAE2;
+    --ink-dim: #9198A6;
+    --ink-faint: #5C6270;
+    --accent: #C17A2E;
+    --accent-soft: rgba(193, 122, 46, 0.18);
+    --sage: #7C9A82;
+    --violet: #8D82B8;
+    --rust: #A66B5C;
+    --grey: #6B7280;
+  }
+
+  body {
+    background-color: var(--bg);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Custom scrollbar for dark financial ledger theme */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--bg);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--ink-faint);
+  }
+}
+
+.font-serif-fraunces {
+  font-family: 'Fraunces', Georgia, serif;
+}
+
+.font-sans-plex {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.font-mono-plex {
+  font-family: 'IBM Plex Mono', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #12151a !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
